@@ -1,19 +1,9 @@
-'''print('skjhbdkwjhegckijhxhn'.upper())
-print('nxnnxJJJSnnzlkAK'.lower())
-print ('djshcjhdcjkhsdbvj sjhcjhdcjhdcv ikejdhvfjhkb vfd'.title())
-print ('kjsdckjc qjdckcj wsxsliochj'.capitalize())
-z = 'jhsdckjlcvkj'
-y = z.replace('jh', 'DOOM')
-x = print
-x(y)
-x(y.isdecimal())'''
-
-x = input('Введите Email')
-val = True
-if len(x) < 8:
-    val = False
-elif '@' not in x:
-    val = False
-y = x.split('@')
-
-print (y)
+y = [3, 4, 6, 77, 3, 11, 54, 3, 11, 6, 7]
+while True:
+    try:
+        x = input('Введите номер ячейки  ')
+        print(y[int(x)])
+    except ValueError:
+        print('Вы ввели не число')
+    except IndexError:
+        print('Вы ввели не корректный  номер ячейки')
